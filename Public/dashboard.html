@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xenora Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Welcome to Xenora</h1>
+<a href="/logout">Logout</a>
+
+<div class="tab">
+  <button onclick="openTab('chat')">Chat</button>
+  <button onclick="openTab('image')">Image Gen</button>
+  <button onclick="openTab('builder')">Character Builder</button>
+  <button onclick="openTab('saved')">My Characters</button>
+</div>
+
+<div id="chat" class="tab-content">
+  <h2>Chat</h2>
+  <div id="chat-box"></div>
+  <textarea id="chat-input" placeholder="Say something..."></textarea>
+  <button onclick="sendChat()">Send</button>
+</div>
+
+<div id="image" class="tab-content" style="display:none;">
+  <h2>Generate Image</h2>
+  <input type="text" id="image-prompt" placeholder="Describe character...">
+  <button onclick="generateImage()">Generate</button>
+  <div id="image-result"></div>
+</div>
+
+<div id="builder" class="tab-content" style="display:none;">
+  <h2>Character Builder</h2>
+  <input type="text" id="char-name" placeholder="Name">
+  <textarea id="char-desc" placeholder="Description"></textarea>
+  <textarea id="char-personality" placeholder="Personality (e.g. kind, flirty)"></textarea>
+  <input type="text" id="char-traits" placeholder="Traits (comma separated)">
+  <textarea id="char-scenario" placeholder="Scenario / Roleplay setup"></textarea>
+  <button onclick="saveCharacter()">Save Character</button>
+</div>
+
+<div id="saved" class="tab-content" style="display:none;">
+  <h2>My Characters</h2>
+  <div id="saved-characters"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
