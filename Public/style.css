@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f5f7fa; text-align: center; margin: 0; padding: 20px; }
+.form-container { background: white; padding: 20px; max-width: 300px; margin: auto; border-radius: 10px; }
+input, textarea, button { margin: 5px; padding: 10px; width: 90%; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #4b6cb7; color: white; border: none; cursor: pointer; }
+button:hover { background: #182848; }
+.tab button { margin: 5px; }
+#chat-box { border: 1px solid #ccc; height: 200px; overflow-y: auto; margin: 10px; padding: 5px; background: #fff; }
+.character-card { border: 1px solid #ccc; margin: 5px; padding: 10px; border-radius: 8px; display: inline-block; width: 150px; }
